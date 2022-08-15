@@ -1,4 +1,3 @@
-import LoginForm from '../../components/form/login/loginForm'
 import { Card, Heading, Layout, Page } from '@shopify/polaris'
 import SignupForm from '../../components/form/signup/SignupForm'
 

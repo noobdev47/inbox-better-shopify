@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
-import LoginForm from '../../components/form/login/loginForm'
+import LoginForm from '../../components/form/login/LoginForm'
 import { Card, Heading, Layout, Page } from '@shopify/polaris'
 
 const Login = () => {
