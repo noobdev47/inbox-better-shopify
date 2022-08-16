@@ -51,6 +51,7 @@ export default defineConfig({
   root: dirname(fileURLToPath(import.meta.url)),
   define: {
     "process.env.SHOPIFY_API_KEY": JSON.stringify(process.env.SHOPIFY_API_KEY),
+    "process.env.SHOPIFY_APP_URL": JSON.stringify(process.env.SHOPIFY_APP_URL),
   },
   esbuild: {
     jsxInject: `import React from 'react'`,
