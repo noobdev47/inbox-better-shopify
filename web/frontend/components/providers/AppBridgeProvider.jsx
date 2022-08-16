@@ -35,18 +35,16 @@ export function AppBridgeProvider({ children }) {
 	// Using state in this way is preferable to useMemo.
 	// See: https://stackoverflow.com/questions/60482318/version-of-usememo-for-caching-a-value-that-will-never-change
 	const [appBridgeConfig] = useState(() => {
-		const host = process.env.SHOPIFY_APP_URL || window.__SHOPIFY_DEV_HOST
-
-		window.__SHOPIFY_DEV_HOST = host
+		const host = import.meta.env.VITE_SHOPIFY_APP_URL
 
 		return {
 			host,
-			apiKey: process.env.SHOPIFY_API_KEY,
+			apiKey: import.meta.env.VITE_SHOPIFY_API_KEY,
 			forceRedirect: true,
 		}
 	})
 
-	if (!process.env.SHOPIFY_API_KEY) {
+	if (!import.meta.env.VITE_SHOPIFY_API_KEY) {
 		return (
 			<Page narrowWidth>
 				<Layout>
