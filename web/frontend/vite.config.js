@@ -6,7 +6,7 @@ import https from "https";
 if (
   process.env.npm_lifecycle_event === "build" &&
   !process.env.CI &&
-  !process.env.VITE_SHOPIFY_API_KEY
+  !process.env.SHOPIFY_API_KEY
 ) {
   console.warn(
     "\nBuilding the frontend app without an API key. The frontend build will not run without an API key. Set the SHOPIFY_API_KEY environment variable when running the build command.\n"
@@ -20,8 +20,8 @@ const proxyOptions = {
   ws: false,
 };
 
-const host = process.env.VITE_SHOPIFY_APP_URL
-  ? process.env.VITE_SHOPIFY_APP_URL.replace(/https:\/\//, "")
+const host = import.meta.env.VITE_SHOPIFY_APP_URL
+  ? import.meta.env.VITE_SHOPIFY_APP_URL.replace(/https:\/\//, "")
   : undefined;
 
 // HMR doesn't work on Firefox using localhost, so you can temporarily get that to work by setting the
