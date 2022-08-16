@@ -12,7 +12,7 @@ export default function applyAuthMiddleware(
 
   app.get('/', (req, res) => {
     if (req.query) {
-      return res.redirect(`https://${req.query.shop}/admin/oauth/authorize?client_id=${'dfd42864e76a79bc850da9dd10cc7497'}&scope=${'write_orders'}&redirect_uri=${'https://3e34-203-175-73-170.ngrok.io/auth/login'}&state=${'inboxbetter'}&grant_options[]={}`)
+      return res.redirect(`https://${req.query.shop}/admin/oauth/authorize?client_id=${'dfd42864e76a79bc850da9dd10cc7497'}&scope=${'write_orders'}&redirect_uri=${'https://limitless-eyrie-58610.herokuapp.com/auth/login'}&state=${'inboxbetter'}&grant_options[]={}`)
     }
   })
 
