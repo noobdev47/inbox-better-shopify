@@ -20,8 +20,8 @@ const proxyOptions = {
   ws: false,
 };
 
-const host = process.env.SHOPIFY_APP_URL
-  ? process.env.SHOPIFY_APP_URL.replace(/https:\/\//, "")
+const host = 'https://limitless-eyrie-58610/herokuapp.com'
+  ? 'https://limitless-eyrie-58610/herokuapp.com'.replace(/https:\/\//, "")
   : undefined;
 
 // HMR doesn't work on Firefox using localhost, so you can temporarily get that to work by setting the
