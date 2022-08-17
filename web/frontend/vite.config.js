@@ -20,7 +20,7 @@ const proxyOptions = {
   ws: false,
 };
 
-const host = 'https://limitless-eyrie-58610.herokuapp.com'
+const host = 'https://inboxbettertest.myshopify.com'
 // ? 'https://limitless-eyrie-58610/herokuapp.com'.replace(/https:\/\//, "")
 // : undefined;
 

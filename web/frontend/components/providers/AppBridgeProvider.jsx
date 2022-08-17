@@ -36,7 +36,7 @@ export function AppBridgeProvider({ children }) {
 	// See: https://stackoverflow.com/questions/60482318/version-of-usememo-for-caching-a-value-that-will-never-change
 	const [appBridgeConfig] = useState(() => {
 		return {
-			host: 'https://limitless-eyrie-58610.herokuapp.com',
+			host: 'https://inboxbettertest.myshopify.com',
 			apiKey: import.meta.env.VITE_SHOPIFY_API_KEY,
 			forceRedirect: true,
 		}
